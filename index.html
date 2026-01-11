@@ -1,0 +1,183 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baby Shower Nicolas Eithan</title>
+    <meta name="description" content="Invitacion interactiva para el baby shower de Nicolas Eithan." />
+    <link rel="icon" type="image/png" href="img/icono.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/nico.css" />
+    <script src="JavaScript/nico.js" defer></script>
+  </head>
+  <body class="antialiased text-[color:var(--ink)]">
+    <div class="page-shell">
+      <div class="top-progress" aria-hidden="true">
+        <span id="progress-bar"></span>
+      </div>
+      <div id="sparkle-layer" class="sparkle-layer" aria-hidden="true"></div>
+      <div id="balloon-layer" class="balloon-layer" aria-hidden="true"></div>
+
+      <div class="content mx-auto max-w-5xl px-6 pb-24">
+        <header class="pt-16 text-center hero-reveal">
+          <h1 class="font-script mt-4 text-5xl sm:text-6xl text-[color:var(--accent-strong)]">
+            Baby Shower
+          </h1>
+          <p class="mt-2 text-sm uppercase tracking-[0.35em] text-slate-500">Nicolas Eithan</p>
+          <p class="mt-3 text-lg font-semibold text-slate-700">Martinez Franco</p>
+          <p class="mt-4 text-sm text-slate-500">
+            Desliza para descubrir cada capitulo y celebrar esta llegada especial.
+          </p>
+          <button
+            id="open-invite"
+            class="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-[color:var(--accent-strong)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-white shadow-lg shadow-sky-200/60 transition hover:-translate-y-0.5 hover:bg-[color:var(--accent)] cta-pulse"
+            type="button"
+          >
+            Abrir invitacion
+          </button>
+        </header>
+
+        <section id="cover" class="invite-card mt-10 text-center reveal">
+          <p class="ribbon mx-auto reveal-item delay-1">Un hermoso bebe esta por llegar</p>
+          <h2 class="font-script mt-6 text-4xl sm:text-5xl text-[color:var(--accent-strong)] reveal-item delay-2">
+            Nicolas Eithan
+          </h2>
+          <p class="mt-2 text-xs uppercase tracking-[0.3em] text-slate-500 reveal-item delay-3">Martinez Franco</p>
+          <p class="mt-6 text-base leading-relaxed text-slate-600 reveal-item delay-4 invite-message">
+            Mientras Diosito termina de hacer mis ojitos, boquita y manitas, mis papis estan felices esperando
+            mi llegada y quieren compartir contigo esta alegria.
+          </p>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-3 reveal-item delay-5">
+            <div class="chip">
+              <p class="section-title">Fecha</p>
+              <p class="mt-2 text-lg font-semibold">Sabado 28 de febrero 2026</p>
+            </div>
+            <div class="chip">
+              <p class="section-title">Hora</p>
+              <p class="mt-2 text-lg font-semibold">3:00 PM</p>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-3 text-xs uppercase tracking-[0.25em] text-slate-500 reveal-item delay-6">
+            <span class="pill">Con amor</span>
+            <span class="pill">Baby boy</span>
+            <span class="pill">Dulce espera</span>
+          </div>
+        </section>
+
+        <nav class="chapter-nav mt-10 flex flex-wrap items-center justify-center gap-3 text-xs uppercase tracking-[0.25em]">
+          <a class="nav-link" href="#invitacion" data-nav="invitacion">Invitacion</a>
+          <a class="nav-link" href="#detalles" data-nav="detalles">Detalles</a>
+          <a class="nav-link" href="#cuenta" data-nav="cuenta">Cuenta regresiva</a>
+        </nav>
+
+        <main id="invite" class="mt-12 space-y-10 pb-10 is-closed">
+          <section id="invitacion" data-section="invitacion" class="invite-card reveal">
+            <p class="section-title reveal-item delay-1">Capitulo 1</p>
+            <h3 class="font-display mt-3 text-2xl sm:text-3xl text-slate-700 reveal-item delay-2">La invitacion oficial</h3>
+            <p class="mt-3 text-sm text-slate-600 reveal-item delay-3">
+              Toca la imagen para verla completa y guardarla.
+            </p>
+            <div class="invite-image-wrap mt-6 reveal-item delay-4">
+              <button class="invite-image-btn" type="button" aria-label="Ver invitacion en grande">
+                <img
+                  class="invite-image"
+                  src="img/invitacion.jpeg"
+                  alt="Invitacion baby shower Nicolas Eithan"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+          </section>
+
+          <div class="chapter-separator reveal" aria-hidden="true">
+            <span class="separator-icon"></span>
+          </div>
+
+          <section id="detalles" data-section="detalles" class="invite-card reveal">
+            <p class="section-title reveal-item delay-1">Capitulo 2</p>
+            <h3 class="font-display mt-3 text-2xl sm:text-3xl text-slate-700 reveal-item delay-2">Detalles del evento</h3>
+            <div class="mt-6 grid gap-4 md:grid-cols-2">
+              <div class="detail-card reveal-item delay-3">
+                <div class="flex items-start gap-3">
+                  <span class="icon-circle">&#128197;</span>
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-500">Fecha y hora</p>
+                    <p class="mt-2 text-lg font-semibold text-slate-700">Sabado 28 de febrero - 3:00 PM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="detail-card reveal-item delay-4">
+                <div class="flex items-start gap-3">
+                  <span class="icon-circle">&#128205;</span>
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-500">Lugar</p>
+                    <p class="mt-2 text-lg font-semibold text-slate-700">Tlahuac, CDMX.</p>
+                    <p class="mt-1 text-sm text-slate-500">La habana, Jacinto islas. Lote 88</p>
+                    <a
+                      class="cta-btn ghost mt-3"
+                      href="https://www.google.com.mx/maps/@19.2666908,-98.9952922,3a,75y,96.32h,85.81t/data=!3m7!1e1!3m5!1s8aA14dr_zF9sBE_tRG_ogA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D4.19023596570608%26panoid%3D8aA14dr_zF9sBE_tRG_ogA%26yaw%3D96.31938310180793!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Ver ubicacion
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="chapter-separator reveal" aria-hidden="true">
+            <span class="separator-icon"></span>
+          </div>
+
+          <section id="cuenta" data-section="cuenta" class="invite-card reveal">
+            <p class="section-title reveal-item delay-1">Capitulo 3</p>
+            <h3 class="font-display mt-3 text-2xl sm:text-3xl text-slate-700 reveal-item delay-2">Cuenta regresiva</h3>
+            <p class="mt-3 text-sm text-slate-600 reveal-item delay-3">Falta poco para abrazar a nuestro bebe.</p>
+            <div class="mt-6 grid gap-4 sm:grid-cols-4">
+              <div class="countdown-card reveal-item delay-4">
+                <p class="countdown-number" data-count="days">0</p>
+                <p class="countdown-label">Dias</p>
+              </div>
+              <div class="countdown-card reveal-item delay-5">
+                <p class="countdown-number" data-count="hours">0</p>
+                <p class="countdown-label">Horas</p>
+              </div>
+              <div class="countdown-card reveal-item delay-6">
+                <p class="countdown-number" data-count="minutes">0</p>
+                <p class="countdown-label">Minutos</p>
+              </div>
+              <div class="countdown-card reveal-item delay-7">
+                <p class="countdown-number" data-count="seconds">0</p>
+                <p class="countdown-label">Segundos</p>
+              </div>
+            </div>
+          </section>
+          <br><br>
+        </main>
+      </div>
+
+      <footer class="content pb-12 text-center text-xs uppercase tracking-[0.2em] text-slate-500">
+        Gracias por ser parte de nuestra dulce espera.
+      </footer>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-close="lightbox"></div>
+      <div class="lightbox-card" role="dialog" aria-modal="true" aria-label="Invitacion en grande">
+        <button id="lightbox-close" class="lightbox-close" type="button">Cerrar</button>
+        <img id="lightbox-image" class="lightbox-image" alt="Invitacion baby shower Nicolas Ethan" />
+      </div>
+    </div>
+  </body>
+</html>
